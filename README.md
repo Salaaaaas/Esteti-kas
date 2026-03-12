@@ -10,7 +10,6 @@ GitHub currently detects **CSS** as the primary language for this repository. De
 - **HTML** for markup
 - **JavaScript** for interactivity
 
-> If you add frameworks/libraries (e.g., Bootstrap, Tailwind, React, etc.), consider listing them here.
 
 ## Getting Started
 Because this is a website repository, you can typically preview it locally by opening the main HTML file (e.g., `index.html`) in your browser, or by serving the folder with a simple static server.
