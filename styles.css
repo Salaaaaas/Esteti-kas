@@ -37,11 +37,20 @@ header {
 }
 
 .logo {
-    font-size: 2rem;
-    font-weight: 300;
-    color: var(--white); /* Blanco para resaltar elegantemente sobre el café profundo */
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    background-color: transparent !important; /* Quitamos el fondo azul */
+    padding: 0 !important;
+    border-radius: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    display: block;
 }
 
 nav ul {
