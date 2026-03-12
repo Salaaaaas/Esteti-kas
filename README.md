@@ -33,6 +33,3 @@ The structure may evolve as the website grows. A typical layout looks like:
 
 ## Authors
 - **Sebastión Salas Leitón** (GitHub: `Salaaaaas`)
-
-## License
-No license has been specified yet. If you plan to make this repository open source, add a `LICENSE` file (e.g., MIT, Apache-2.0, GPL-3.0).
