@@ -4,77 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esteti'Kas | Medicina, Salud & Belleza</title>
-    
-    <!-- SEO & Meta Tags -->
-    <meta name="description" content="Esteti'Kas: Clínica de medicina estética avanzada. Dra. Karen Mayorga y Katherine Leitón. Tratamientos faciales, botox, ácido hialurónico y cuidado integral en Bataan.">
+    <meta name="description" content="Esteti'Kas: Clínica de medicina estética avanzada. Dra. Karen Mayorga y la Esteticista Katherine Leitón. Tratamientos faciales, botox, ácido hialurónico y cuidado integral en Bataan.">
     <meta name="keywords" content="estética, limpieza facial, botox, ácido hialurónico, Bataan, Limón, medicina estética, salud, belleza">
-    
-    <!-- Open Graph / Redes Sociales -->
     <meta property="og:title" content="Esteti'Kas | Medicina, Salud & Belleza">
     <meta property="og:description" content="Tu aliado en el cuidado integral. Procedimientos estéticos avanzados y personalizados.">
-    <meta property="og:image" content="https://estetikas.com/logo_social.png">
-    <meta property="og:url" content="https://estetikas.com">
+    <meta property="og:image" content="https://estetikas.netlify.app/logo_social.png">
+    <meta property="og:url" content="https://estetikas.netlify.app">
     <meta property="og:type" content="website">
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
-
-    <!-- Conectamos la hoja de estilos avanzada -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home-page">
 
-    <!-- Encabezado Oscuro y Elegante -->
     <header>
         <div class="logo">
-            <img src="logo_estetica.png" alt="Esteti'Kas Logo" style="height: 60px; width: auto; display: block;">
+            <img src="img/logo_estetica.png" alt="Esteti'Kas Logo" style="height: 60px; width: auto; display: block;">
         </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li><a href="#nosotras">Sobre Nosotras</a></li>
+                <li><a href="pages/tratamientos.html">Tratamientos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Sección Principal -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Medicina, Salud y Belleza Avanzada</h1>
-                <p>Tu aliado en el cuidado integral. Procedimientos estéticos personalizados a cargo de profesionales de la salud: Dra. Karen Mayorga Quirós y Katherine Leitón Castillo.</p>
+                <p>Tu aliado en el cuidado integral. Procedimientos estéticos personalizados a cargo de profesionales de la salud.</p>
                 <a href="#contacto" class="btn">Agendar Valoración</a>
             </div>
-            <img src="clinic_hero_image.png" alt="Instalaciones de Esteti'Kas" class="hero-image">
+            <img src="img/facial.jpeg" alt="Instalaciones de Esteti'Kas" class="hero-image">
         </section>
-
-        <!-- Sección de Servicios / Tratamientos -->
-        <section id="tratamientos" class="services">
-            <h2>Nuestros Tratamientos</h2>
-            <span class="subtitle">Descubre una nueva forma de cuidarte con tecnología avanzada</span>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Facial & Regeneración</h3>
-                    <p>Mejora la textura y regenera tu piel. Ofrecemos <strong>Dermaplaning, Dermapen, Peelings</strong>, aplicación de <strong>Exosomas y Polinucleótidos</strong>, además de inyectables como <strong>Botox y Ácido Hialurónico</strong>.</p>
-                    <p><em>*También realizamos limpiezas faciales profundas acordes a su necesidad.</em></p>
-                    <a href="#contacto" class="service-link">Consultar Tratamiento →</a>
-                </div>
-                <div class="service-card">
-                    <h3>Bioestimulación & Contorno</h3>
-                    <p>Recupera la firmeza y define tu contorno. Aplicamos <strong>Bioestimuladores de colágeno</strong> en rostro, cuello, escote, manos y glúteos. Además usamos <strong>Mesoterapia (Enzimas)</strong> para la eliminación de doble mentón y flacidez facial.</p>
-                    <a href="#contacto" class="service-link">Consultar Tratamiento →</a>
-                </div>
-                <div class="service-card">
-                    <h3>Cuidado Corporal</h3>
-                    <p>Terapias enfocadas en tu bienestar físico. Realizamos <strong>Mesoterapia enzimática</strong> para reducción de medidas y flacidez, tratamientos para mejoría en la apariencia de <strong>estrías</strong>, y eliminación de <strong>verrugas</strong>.</p>
-                    <a href="#contacto" class="service-link">Consultar Tratamiento →</a>
+    <section id="nosotras" class="staff-profiles">
+        <!-- Dra. Karen Mayorga -->
+        <div class="profile-block">
+            <div class="profile-image-side">
+                <img src="img/dr_karen.jpeg" alt="Dra. Karen Mayorga Quirós">
+            </div>
+            <div class="profile-content-side">
+                <span class="profile-tag">Medicina Estética</span>
+                <h2 class="profile-name">Dra. Karen Mayorga Quirós</h2>
+                <div class="profile-bio">
+                    <p>La Dra. Karen Mayorga es médico especializada en estética regenerativa y armonización facial. Con años de experiencia y una constante actualización en las últimas tendencias globales, su enfoque se basa en realzar la belleza natural de cada paciente.</p>
+                    <p>Comprometida con la excelencia profesional, garantiza tratamientos seguros y personalizados mediante el uso de tecnología de vanguardia y productos de la más alta calidad.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Sección: ¿Por qué hacerme una limpieza facial? (Educativo / Venta) -->
+        <!-- Katherine Leitón -->
+        <div class="profile-block reverse">
+            <div class="profile-image-side">
+                <img src="img/mami.jpeg" alt="Especialista Katherine Leitón Castillo">
+            </div>
+            <div class="profile-content-side">
+                <span class="profile-tag">Especialista en Estética</span>
+                <h2 class="profile-name">Katherine Leitón Castillo</h2>
+                <div class="profile-bio">
+                    <p>Katherine Leitón es especialista certificada en tratamientos faciales y corporales avanzados. Su pasión por el cuidado de la piel la ha llevado a dominar técnicas exclusivas que combinan bienestar y resultados visibles desde la primera sesión.</p>
+                    <p>Su calidez humana y enfoque detallista aseguran que cada visita a Esteti'Kas sea una experiencia de transformación y relajación absoluta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
         <section class="promo-section" style="background-color: var(--bg-light); padding: 5rem 5%;">
             <div style="max-width: 900px; margin: 0 auto; display: flex; align-items: center; gap: 3rem; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
@@ -83,16 +83,24 @@
                         Una limpieza facial al mes es esencial para mantener un buen cuidado de la piel. Con el tiempo, esta puede acumular politución, poros dilatados, puntos negros y células muertas que causan falta de vitalidad. ¡Además, nos ayuda a prevenir líneas de expresión!
                     </p>
                     <ul style="list-style: none; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500;">✓ Limpieza profunda</li>
-                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500;">✓ Hidratación intensiva</li>
-                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500;">✓ Antienvejecimiento y luminosidad</li>
+                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Limpieza profunda
+                        </li>
+                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Hidratación intensiva
+                        </li>
+                        <li style="margin-bottom: 0.8rem; color: var(--secondary-color); font-weight: 500; display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--primary-color);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Antienvejecimiento y luminosidad
+                        </li>
                     </ul>
                     <a href="#contacto" class="btn">Agenda Ahora</a>
                 </div>
             </div>
         </section>
 
-        <!-- Sección: Cuidados Post Limpieza (Valor Agregado) -->
         <section class="care-section" style="padding: 5rem 5%; background-color: var(--bg-color);">
             <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
                 <h2 style="color: var(--secondary-color); font-size: 2.2rem; font-weight: 300; margin-bottom: 4rem; text-transform: uppercase;">Cuidados Post Limpieza Facial Profunda</h2>
@@ -128,12 +136,66 @@
                         </ul>
                         <p style="margin-top: 1rem; color: #888; font-size: 0.85rem;">Nota: Es normal que aparezca un ligero enrojecimiento en las primeras horas.</p>
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Sección: Preguntas Frecuentes (FAQ Interactiva con JS) -->
+        <section id="resultados" class="results-section" style="padding: 6rem 5%; background-color: var(--bg-light);">
+            <div style="max-width: 1200px; margin: 0 auto; text-align: center; max-height: 1600px;">
+                <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1rem;">Resultados Reales</h2>
+                <span class="subtitle" style="margin-bottom: 4rem;">La magia detrás de cada tratamiento</span>
+                
+                <div class="before-after-container">
+                    <div class="ba-slider">
+                        <div class="ba-image-before" style="background-image: url('img/despues.png');"></div>
+                        <div class="ba-image-after" style="background-image: url('img/antes.png');"></div>
+                        <div class="ba-handle">
+                            <div class="ba-line"></div>
+                        </div>
+                    </div>
+                    <div class="ba-info">
+                        <h3>Tratamiento de Limpieza Facial</h3>
+                        <p>Resultados visibles tras varias sesiones. Enfocados en limpiar y dar luminosidad a la piel.</p>
+                        <a href="#contacto" class="service-link">Ver más resultados →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section" style="padding: 6rem 5%; overflow: hidden;">
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+                <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 4rem;">Lo que dicen nuestras pacientes</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p>No puedo estar más feliz con los resultados de mi limpieza facial. Mi piel se siente renovada y luminosa. ¡Súper recomendadas!</p>
+                        <div class="patient-info">
+                            <strong>Maria F.</strong>
+                            <span>Paciente recurrente</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p>La Dra. Karen es una profesional increíble. Me sentí segura y cómoda durante todo el procedimiento de Botox. ¡Resultados muy naturales!</p>
+                        <div class="patient-info">
+                            <strong>Andrea M.</strong>
+                            <span>Paciente de Estética</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon">"</div>
+                        <p>Katherine tiene unas manos mágicas. Sus tratamientos faciales son toda una experiencia de relajación y cuidado.</p>
+                        <div class="patient-info">
+                            <strong>Lucía R.</strong>
+                            <span>Paciente Facial</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section class="faq-section">
             <h2>Preguntas Frecuentes</h2>
             
@@ -167,36 +229,67 @@
                     <p>No, el peeling no quema la cara. Es un tratamiento que ayuda a eliminar las células muertas de la piel, lo que puede causar un ligero enrojecimiento en las primeras horas, pero generalmente no causa dolor.</p>
                 </div>
             </div>
-            </div> <!-- Fin de faq-container -->
-            
+            </div> 
         </section>
 
-        <!-- Sección de Contacto -->
         <section id="contacto" class="contact">
-            <h2>Agenda tu cita hoy</h2>
-            <p><strong>Ubicados en:</strong> Clínica ODONTOBATAAN</p>
-            <p><strong>Teléfono / WhatsApp:</strong> 8432 0647</p>
-            <br>
-            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                <a href="https://wa.me/50684320647" class="btn btn-outline" target="_blank" style="display: flex; align-items: center; gap: 10px;">
-                    <img src="logo_whatsapp.png" alt="WhatsApp" style="height: 26px; width: 26px; object-fit: contain; background: transparent;">
-                    Contactar por WhatsApp
-                </a>
-                <a href="https://www.instagram.com/esteti_kas/" class="btn btn-outline" target="_blank" style="display: flex; align-items: center; gap: 10px;">
-                    <img src="logo_instagram.png" alt="Instagram" style="height: 26px; width: 26px; object-fit: contain; background: transparent;">
-                    Visítanos en Instagram
-                </a>
+            <div class="contact-container" style="max-width: 1200px; margin: 0 auto; display: flex; gap: 4rem; flex-wrap: wrap; text-align: left;">
+                <div class="contact-info" style="flex: 1; min-width: 300px;">
+                    <h2 style="font-family: var(--font-heading); font-size: 3rem; margin-bottom: 1.5rem; color: var(--white); text-align: left;">Agenda tu cita hoy</h2>
+                    <p style="color: #bbb; font-size: 1.1rem; margin-bottom: 3rem;">Inicia tu camino hacia una piel radiante. Nuestro equipo te espera en cualquiera de nuestras sucursales.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="method-item" style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary-color); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 0.5rem;">WhatsApp</h4>
+                            <a href="https://wa.me/50684320647" style="color: var(--white); font-size: 1.5rem; text-decoration: none; font-weight: 500;">+506 8432 0647</a>
+                        </div>
+                        <div class="method-item" style="margin-bottom: 2rem;">
+                            <h4 style="color: var(--primary-color); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 0.5rem;">Ubicaciones</h4>
+                            <p style="color: var(--white); margin-bottom: 0.5rem;"><strong>Bataan:</strong> Clínica ODONTOBATAAN</p>
+                            <p style="color: var(--white);"><strong>Guápiles:</strong> Clínica Medical Numancia</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-top: 3rem;">
+                        <a href="https://wa.me/50684320647" class="social-icon-btn"><img src="img/logo_whatsapp.png" alt="WA"></a>
+                        <a href="https://www.instagram.com/esteti_kas/" class="social-icon-btn"><img src="img/logo_instagram.png" alt="IG"></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" style="flex: 1; min-width: 300px; background: rgba(255,255,255,0.05); padding: 3rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1);">
+                    <form id="premium-contact-form">
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; color: var(--white); margin-bottom: 0.5rem; font-size: 0.9rem;">Nombre Completo</label>
+                            <input type="text" id="contact-name" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label style="display: block; color: var(--white); margin-bottom: 0.5rem; font-size: 0.9rem;">Tratamiento de Interés</label>
+                            <select id="contact-treatment" required>
+                                <option value="" disabled selected>Selecciona un tratamiento</option>
+                                <option value="limpieza">Limpieza Facial Profunda</option>
+                                <option value="botox">Botox / Rellenos</option>
+                                <option value="regeneracion">Regeneración Facial</option>
+                                <option value="corporal">Tratamiento Corporal</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 2rem;">
+                            <label style="display: block; color: var(--white); margin-bottom: 0.5rem; font-size: 0.9rem;">Mensaje</label>
+                            <textarea id="contact-message" placeholder="¿Cómo podemos ayudarte?" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Enviar Solicitud</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Esteti'Kas Medicina, Salud & Belleza. Dra. Karen Mayorga Quirós y Katherine Leitón Castillo. Todos los derechos reservados.</p>
     </footer>
-
-    <!-- Conexión del archivo JavaScript -->
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
