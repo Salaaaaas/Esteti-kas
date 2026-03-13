@@ -29,79 +29,150 @@
     </header>
 
     <main>
-        <section class="page-hero">
+        <section class="page-hero" style="background-image: url('../img/fondo_tratamientos.jpeg');">
             <div class="hero-text-wrapper">
                 <h1>Nuestros Tratamientos</h1>
                 <p>Excelencia en medicina estética y cuidado integral</p>
             </div>
         </section>
 
-        <!-- Facial & Regeneración -->
-        <section class="treatment-detail-block">
-            <div class="treatment-image">
-                <img src="../img/relleno_labios.jpeg" alt="Facial & Regeneración">
-            </div>
-            <div class="treatment-content">
-                <span class="profile-tag">Piel & Rostro</span>
-                <h2>Facial & Regeneración</h2>
-                <div class="treatment-description">
-                    <p>Tratamientos diseñados para devolverle la vitalidad, textura y salud a tu piel. Utilizamos las técnicas más avanzadas en regeneración celular.</p>
-                    <p><strong>Qué esperar:</strong> Un análisis detallado de tu tipo de piel, seguido de procedimientos que estimulan la renovación natural. Resultados visibles desde la primera sesión con mínima recuperación.</p>
-                </div>
-                <ul class="included-list">
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Botox & Ácido Hialurónico</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Dermaplaning & Dermapen</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Peelings Químicos</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Exosomas & Polinucleótidos</li>
-                </ul>
-                <a href="https://wa.me/50684320647" class="btn">Solicitar Información</a>
+        <!-- Categoría Facial & Regeneración -->
+        <section class="treatment-category-section">
+            <h2 class="category-title">Facial & Regeneración</h2>
+            <div class="treatment-cards-grid">
+                <!-- Dermaplaning & Dermapen -->
+                <a href="tratamientos/dermaplaning-dermapen.html" class="t-card trigger-reveal">
+                    <img src="../img/dermapen.jpeg" alt="Dermaplaning & Dermapen" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Textura: Dermaplaning & Dermapen</h3>
+                            <p>Renueva la textura de tu piel, estimulando la producción natural de colágeno y logrando una suavidad extrema.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Peelings -->
+                <a href="tratamientos/peelings.html" class="t-card trigger-reveal">
+                    <img src="../img/peeling.jpeg" alt="Peelings" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Peelings (Acné, Manchas y Líneas)</h3>
+                            <p>Exfoliación química controlada para revelar una piel nueva, libre de brotes activos, manchas solares y líneas de expresión.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Exosomas & Polinucleótidos -->
+                <a href="tratamientos/exosomas-polinucleotidos.html" class="t-card trigger-reveal">
+                    <img src="../img/exozomas.jpeg" alt="Exosomas y Polinucleótidos" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Regeneración: Exosomas & ADN</h3>
+                            <p>Terapia regenerativa avanzada (ADN de salmón) para reprogramar y redensificar la piel desde sus cimientos celulares.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Botox y Rellenos -->
+                <a href="tratamientos/rellenos.html" class="t-card trigger-reveal">
+                    <img src="../img/relleno_labios.jpeg" alt="Botox y Rellenos" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Inyectables: Botox & Ácido Hialurónico</h3>
+                            <p>Armonización facial, lifting líquido y diseño de labios. Resultados elegantes, equilibrados y con naturalidad.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Limpieza Facial -->
+                <a href="tratamientos/limpieza-facial.html" class="t-card trigger-reveal">
+                    <img src="../img/limpieza_facial.jpeg" alt="Limpieza Facial Profunda" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Limpiezas Faciales Profundas</h3>
+                            <p>Higiene y oxigenación celular personalizada acorde a las necesidades específicas de tu tipo de piel para máxima frescura.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
             </div>
         </section>
 
-        <!-- Bioestimulación & Contorno -->
-        <section class="treatment-detail-block">
-            <div class="treatment-image">
-                <img src="../img/mesoterapia.jpeg" alt="Bioestimulación & Contorno">
-            </div>
-            <div class="treatment-content">
-                <span class="profile-tag">Armonización</span>
-                <h2>Bioestimulación & Contorno</h2>
-                <div class="treatment-description">
-                    <p>Define tus rasgos y combate la flacidez. La bioestimulación de colágeno es el estándar de oro para mantener la firmeza natural a largo plazo.</p>
-                    <p><strong>Qué esperar:</strong> Tras una valoración experta, se aplican inductores que logran que tu propio cuerpo regenere soporte estructural. El efecto es progresivo, natural y duradero.</p>
-                </div>
-                <ul class="included-list">
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Bioestimuladores de Colágeno</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Mesoterapia de Armonización</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Perfilado de Glúteos & Manos</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eliminación de Doble Mentón</li>
-                </ul>
-                <a href="https://wa.me/50684320647" class="btn">Ver Disponibilidad</a>
-            </div>
-        </section>
-
-        <!-- Cuidado Corporal -->
-        <section class="treatment-detail-block">
-            <div class="treatment-image">
-                <img src="../img/reduccion.jpeg" alt="Cuidado Corporal">
-            </div>
-            <div class="treatment-content">
-                <span class="profile-tag">Bienestar</span>
-                <h2>Cuidado Corporal</h2>
-                <div class="treatment-description">
-                    <p>Soluciones integrales para la silueta y el bienestar corporal. Técnicas diseñadas para reducir medidas y mejorar la calidad de los tejidos.</p>
-                    <p><strong>Qué esperar:</strong> Un enfoque multidisciplinar que combina enzimas y mesoterapia para atacar la grasa localizada y la flacidez. Ideal para complementar un estilo de vida saludable.</p>
-                </div>
-                <ul class="included-list">
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Mesoterapia Enzimática</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Reducción de Medidas</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Tratamiento de Estrías</li>
-                    <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Eliminación de Verrugas</li>
-                </ul>
-                <a href="https://wa.me/50684320647" class="btn">Consultar Detalles</a>
+        <!-- Categoría Bioestimulación & Contorno -->
+        <section class="treatment-category-section" style="background-color: var(--bg-light);">
+            <h2 class="category-title">Bioestimulación & Contorno</h2>
+            <div class="treatment-cards-grid">
+                <!-- Bioestimuladores de colágeno -->
+                <a href="tratamientos/bioestimuladores-colageno.html" class="t-card trigger-reveal">
+                    <img src="../img/reduccion_estrias.jpeg" alt="Bioestimuladores" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Colágeno: Bioestimuladores</h3>
+                            <p>Activa tu producción de colágeno en rostro, cuello, escote, manos y glúteos para combatir la flacidez de raíz.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+                
+                <!-- Enzimas -->
+                <a href="tratamientos/enzimas-doble-menton.html" class="t-card trigger-reveal">
+                    <img src="../img/enzimas.jpeg" alt="Enzimas Doble Menton" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Enzimas (Mesoterapia)</h3>
+                            <p>Tratamiento especializado para la eliminación del doble mentón (papada), flacidez y perfilado perfecto del contorno facial.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
             </div>
         </section>
 
+        <!-- Categoría Cuidado Corporal -->
+        <section class="treatment-category-section">
+            <h2 class="category-title">Cuidado Corporal</h2>
+            <div class="treatment-cards-grid">
+                <!-- Mesoterapia Enzimática (Reducción) -->
+                <a href="tratamientos/reduccion.html" class="t-card trigger-reveal">
+                    <img src="../img/reduccion.jpeg" alt="Mesoterapia Enzimática Corporal" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Mesoterapia Enzimática</h3>
+                            <p>Tratamiento focalizado para la reducción efectiva de medidas, grasa localizada rebelde y flacidez corporal.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Estrías -->
+                <a href="tratamientos/tratamiento-estrias.html" class="t-card trigger-reveal">
+                    <img src="../img/mesoterapia.jpeg" alt="Tratamiento de Estrías" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Estrías</h3>
+                            <p>Terapia biológica y mecánica combinada para lograr una mejoría notoria en la apariencia y textura de las estrías.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+
+                <!-- Verrugas -->
+                <a href="tratamientos/eliminacion-lunares-verrugas.html" class="t-card trigger-reveal">
+                    <img src="../img/verrugas.jpeg" alt="Eliminación de Lunares y Verrugas" class="t-card-image">
+                    <div class="t-card-info">
+                        <div>
+                            <h3>Eliminación de Lunares y Verrugas</h3>
+                            <p>Procedimiento médico ambulatorio, seguro y sin cicatriz significativa para retirar lesiones benignas de la piel.</p>
+                        </div>
+                        <span class="t-card-link">Leer Más <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer-content">
