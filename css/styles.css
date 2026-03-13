@@ -910,92 +910,194 @@ body:not(.home-page) header {
     text-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.treatment-detail-block {
+/* Treatments Directory Page Styles */
+
+.treatment-category-section {
+    padding: 4rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.category-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.category-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 1rem auto 0;
+}
+
+.treatment-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 3rem;
+    padding: 1rem;
+}
+
+/* Card Style (Overlapping White Box) */
+.t-card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 480px; /* Fixed height for uniformity */
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+}
+
+.t-card-image {
+    width: 100%;
+    height: 380px; /* Image takes up most of the card */
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.6s ease;
+}
+
+.t-card:hover .t-card-image {
+    transform: scale(1.03);
+}
+
+.t-card-info {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 200px; /* Ensure box covers the bottom part */
+}
+
+.t-card:hover .t-card-info {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.t-card-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+}
+
+.t-card-info p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.t-card-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.95rem;
     display: flex;
     align-items: center;
-    min-height: 550px;
-    background: var(--white);
-    overflow: hidden;
+    gap: 8px;
+    transition: gap 0.3s ease;
 }
 
-.treatment-detail-block:nth-child(even) {
-    flex-direction: row-reverse;
+.t-card:hover .t-card-link {
+    gap: 12px;
 }
 
-.treatment-image {
-    flex: 1;
-    height: 550px;
-    min-width: 50%;
-    overflow: hidden;
+/* Individual Treatment Page Styles */
+.treatment-detail-hero {
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: -80px;
+    padding-top: 80px;
 }
 
-.treatment-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-    display: block;
+.treatment-detail-hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
 }
 
-.treatment-detail-block:hover .treatment-image img {
-    transform: scale(1.05);
+.treatment-detail-hero .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 0 2rem;
 }
 
-.treatment-content {
-    flex: 1;
-    padding: 5rem 8%;
-    min-width: 50%;
-}
-
-.treatment-content h2 {
+.treatment-detail-hero h1 {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.treatment-detail-content {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    background: var(--white);
+}
+
+.treatment-detail-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
-    line-height: 1.1;
 }
 
-.treatment-description {
+.treatment-detail-content p {
     font-size: 1.1rem;
     color: #444;
-    margin-bottom: 2rem;
     line-height: 1.8;
+    margin-bottom: 2rem;
 }
 
-.included-list {
-    list-style: none;
-    margin-bottom: 2.5rem;
-    padding: 0;
+.treatment-detail-content .whatsapp-cta-container {
+    margin-top: 4rem;
+    padding: 3rem;
+    background-color: var(--bg-light);
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid rgba(0, 166, 178, 0.1);
 }
 
-.included-list li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.treatment-detail-content .whatsapp-cta-container h3 {
+    font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: var(--text-color);
-    font-weight: 500;
+    color: var(--secondary-color);
 }
 
-.included-list li svg {
-    color: var(--primary-color);
-    flex-shrink: 0;
+@media (max-width: 768px) {
+    .treatment-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    .treatment-detail-hero h1 {
+        font-size: 2.5rem;
+    }
 }
 
-@media (max-width: 991px) {
-    .treatment-detail-block, .treatment-detail-block:nth-child(even) {
-        flex-direction: column;
-        min-height: auto;
-    }
-    .treatment-image {
-        height: 400px;
-        min-width: 100%;
-    }
-    .treatment-content {
-        padding: 4rem 10%;
-        min-width: 100%;
-    }
-    .page-hero h1 {
-        font-size: 2.8rem;
-    }
-}
