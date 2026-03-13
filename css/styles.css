@@ -1,0 +1,1001 @@
+/* Variables y Configuración Básica - Estilo Premium / Clínica Estética */
+:root {
+    --primary-color: #00A6B2; /* Turquesa vibrante pero profesional */
+    --primary-color-hover: #008791; /* Turquesa más oscuro */
+    --accent-gold: #D4AF37; /* Oro clásico */
+    --accent-champagne: #F7E7CE; /* Champán suave */
+    --secondary-color: #111111; /* Negro profundo */
+    --text-color: #1A1A1A;
+    --text-light: #555555;
+    --bg-color: #FFFFFF;
+    --bg-light: #F9FBFC;
+    --white: #ffffff;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header (Navegación) */
+header {
+    background-color: rgba(255, 255, 255, 0.05); /* Transparent initial state */
+    backdrop-filter: blur(0px); 
+
+    -webkit-backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all 0.4s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white); 
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Sección Hero (Banner Principal) */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    min-height: 85vh;
+    background: linear-gradient(135deg, var(--bg-light) 0%, rgba(255,255,255,0) 100%);
+    gap: 4rem;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-light);
+    max-width: 500px;
+    font-weight: 300;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 45%;
+    border-radius: 4px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    object-fit: cover;
+    height: 600px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--primary-color-hover);
+    border-color: var(--primary-color-hover);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+
+.services {
+    padding: 6rem 5%;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.services h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-transform: none;
+}
+
+.subtitle {
+    color: var(--primary-color);
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    display: block;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.service-card {
+    background-color: var(--white);
+    padding: 3.5rem 2.5rem;
+    border-radius: 8px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid rgba(0,0,0,0.03);
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 166, 178, 0.08);
+    border-color: rgba(0, 166, 178, 0.1);
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.service-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.service-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.service-link:hover {
+    color: var(--secondary-color);
+}
+
+.contact {
+    padding: 6rem 5%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    color: #CCCCCC;
+}
+
+footer {
+    background-color: #0A0A0A; 
+    color: #888888; 
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+
+header {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+header.scrolled {
+    padding: 1rem 5%;
+    background-color: rgba(26, 24, 20, 0.98); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); 
+    border-bottom: 1px solid rgba(0, 166, 178, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+header.scrolled .logo {
+    font-size: 1.6rem; 
+}
+
+
+
+.faq-section {
+    padding: 5rem 5%;
+    background-color: var(--white);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #EAEAEA;
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--primary-color);
+}
+
+.faq-icon::after {
+    content: '+';
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    transition: transform 0.4s ease;
+}
+
+.faq-question.active .faq-icon::after {
+    content: '−';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), padding 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    color: var(--text-light);
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+.faq-container {
+    max-height: 500px; 
+    overflow-y: auto;
+    padding-right: 15px; 
+}
+.faq-container::-webkit-scrollbar, 
+.faq-answer::-webkit-scrollbar {
+    width: 6px;
+}
+
+.faq-container::-webkit-scrollbar-track, 
+.faq-answer::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+
+.faq-container::-webkit-scrollbar-thumb, 
+.faq-answer::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border-radius: 10px;
+}
+
+.faq-container::-webkit-scrollbar-thumb:hover, 
+.faq-answer::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color-hover); 
+}
+
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .hero-content {
+        order: 1; 
+    }
+
+    .hero-image {
+        order: 2; 
+        max-width: 80%; 
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        margin: 0 auto 2rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+
+    header.scrolled {
+        padding: 0.8rem 5%;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image {
+        max-width: 95%; 
+    }
+
+    .services, .promo-section, .care-section, .contact {
+        padding: 4rem 5%; 
+    }
+
+    .services h2, .contact h2, .faq-section h2 {
+        font-size: 2rem;
+    }
+    
+    .promo-section > div {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .promo-section h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .care-section h2 {
+        font-size: 1.8rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    .service-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .faq-section {
+        padding: 3rem 5%;
+    }
+    
+    .faq-container {
+        max-height: none; 
+        padding-right: 0;
+    }
+    
+    .faq-question {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Custom Cursor Follower styles */
+.custom-cursor {
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform 0.1s ease-out, background-color 0.3s ease, opacity 0.3s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+.custom-cursor.hover {
+    transform: translate(-50%, -50%) scale(4);
+    background-color: var(--accent-gold);
+    opacity: 0.3;
+}
+
+.custom-cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: transform 0.25s ease-out;
+    transform: translate(-50%, -50%);
+}
+
+.custom-cursor-outline.hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    border-color: var(--accent-gold);
+    opacity: 0; /* Hide outline on hover for a cleaner look when the circle expands */
+}
+
+@media (max-width: 1024px) {
+    html, a, button, .btn, .faq-question {
+        cursor: auto;
+    }
+    .custom-cursor, .custom-cursor-outline {
+        display: none;
+    }
+}
+
+/* Contact & Social */
+.social-icon-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+.social-icon-btn img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 1rem;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group select option {
+    color: var(--secondary-color);
+    background-color: var(--white);
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: rgba(255,255,255,0.1);
+}
+
+/* Micro-animations */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255,255,255,0.1);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.6s ease-out;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.btn:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+    0% { transform: translateX(-100%) skewX(-15deg); }
+    100% { transform: translateX(200%) skewX(-15deg); }
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.3) 50%,
+        rgba(255,255,255,0) 100%
+    );
+    animation: shimmer 4s infinite;
+    z-index: 1;
+}
+
+.service-card {
+    cursor: auto; /* Reverting card cursor since follower is used */
+}
+
+/* Before & After Slider */
+.before-after-container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.ba-slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 375px; /* 4:3 Aspect Ratio */
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.ba-image-before, .ba-image-after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Reverting to cover to avoid stretching/distortion */
+    background-position: center;
+}
+
+.ba-image-after {
+    width: 100%; /* Keep full width to avoid zoom */
+    clip-path: inset(0 50% 0 0); /* Initial split */
+    border-right: 2px solid var(--white); /* This won't work perfectly with clip-path, handle will cover it */
+    z-index: 2;
+}
+
+.ba-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--white);
+    transform: translateX(-50%);
+    z-index: 3;
+    pointer-events: none; /* Let the container handle the mouse events */
+}
+
+.ba-handle::after {
+    content: '↔';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.ba-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.ba-info h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.ba-info p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+/* Testimonials */
+.testimonials-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.testimonial-card {
+    background: var(--bg-light);
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    text-align: left;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-gold);
+}
+
+.quote-icon {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: 1;
+    color: var(--accent-gold);
+    opacity: 0.2;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.patient-info strong {
+    display: block;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.patient-info span {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .testimonials-container {
+        flex-direction: column;
+    }
+    .ba-slider {
+        height: 350px;
+    }
+}
+
+/* Staff Profile Styles - Premium Redesign */
+.staff-profiles {
+    padding: 0;
+    background: var(--white);
+}
+
+.profile-block {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-block.reverse {
+    flex-direction: row-reverse;
+}
+
+.profile-image-side {
+    flex: 1;
+    min-width: 50%;
+    height: 700px; /* Increased height for portraits */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.treatment-detail-block:hover .treatment-image img {
+    transform: scale(1.05);
+}
+.profile-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Show the full image without cropping */
+    display: block;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.profile-block:hover .profile-image-side img {
+    transform: scale(1.05);
+}
+
+
+.profile-content-side {
+    flex: 1;
+    padding: 4rem 6%;
+    min-width: 50%;
+    background-color: var(--white);
+}
+
+.profile-tag {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    margin-bottom: 1.5rem;
+    display: block;
+    font-weight: 500;
+}
+
+.profile-name {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 2.5rem;
+    line-height: 1.1;
+}
+
+.profile-bio {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.profile-bio p {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 991px) {
+    .profile-image-side {
+        height: 450px;
+        min-width: 100%;
+    }
+    .profile-content-side {
+        padding: 4rem 10%;
+        min-width: 100%;
+    }
+    .profile-name {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Override Header for Subpages */
+body:not(.home-page) header {
+    background-color: #1a1814;
+    border-bottom: 1px solid rgba(0, 166, 178, 0.2);
+}
+
+/* Treatments Page Specific Styles */
+.page-hero {
+    height: 45vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/clinic_hero_image.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: -80px;
+    padding-top: 80px;
+}
+
+.page-hero h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.treatment-detail-block {
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+    background: var(--white);
+    overflow: hidden;
+}
+
+.treatment-detail-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.treatment-image {
+    flex: 1;
+    height: 550px;
+    min-width: 50%;
+    overflow: hidden;
+}
+
+.treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    display: block;
+}
+
+.treatment-detail-block:hover .treatment-image img {
+    transform: scale(1.05);
+}
+
+.treatment-content {
+    flex: 1;
+    padding: 5rem 8%;
+    min-width: 50%;
+}
+
+.treatment-content h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+}
+
+.treatment-description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.included-list {
+    list-style: none;
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+.included-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.included-list li svg {
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+    .treatment-detail-block, .treatment-detail-block:nth-child(even) {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .treatment-image {
+        height: 400px;
+        min-width: 100%;
+    }
+    .treatment-content {
+        padding: 4rem 10%;
+        min-width: 100%;
+    }
+    .page-hero h1 {
+        font-size: 2.8rem;
+    }
+}
