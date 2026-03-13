@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // ---------------------------------------------------------
-    // 0. CUSTOM CURSOR
-    // ---------------------------------------------------------
     const cursor = document.createElement('div');
     const cursorOutline = document.createElement('div');
     cursor.className = 'custom-cursor';
@@ -38,16 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     
-    // ---------------------------------------------------------
-    // 1. INICIALIZACIÓN DE LENIS (Scroll Suave con Inercia)
-    // ---------------------------------------------------------
     const lenis = new Lenis({
         duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Función de suavizado estándar
-        smoothWheel: true
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
-    // Sincronizar Lenis con GSAP ScrollTrigger
     lenis.on('scroll', ScrollTrigger.update);
 
     gsap.ticker.add((time) => {
@@ -56,10 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     gsap.ticker.lagSmoothing(0);
 
-
-    // ---------------------------------------------------------
-    // 2. BARRA DE NAVEGACIÓN INTELIGENTE (Efecto Glassmorphism)
-    // ---------------------------------------------------------
     const header = document.querySelector('header');
     
     window.addEventListener('scroll', () => {
@@ -70,15 +58,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Scroll suave mejorado (usando Lenis)
     document.querySelectorAll('nav a, .service-link, .btn').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             const targetId = this.getAttribute('href');
             
-            // Si el enlace no es un ancla interna o es a otra página, dejamos que el navegador lo maneje
             if (!targetId || !targetId.startsWith('#')) return;
 
-            // Si es un ancla interna
             e.preventDefault();
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
@@ -90,15 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
-    // ---------------------------------------------------------
-    // 3. ANIMACIONES PREMIUM CON GSAP (ScrollTrigger)
-    // ---------------------------------------------------------
-    
-    // Registro de plugin
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animación de aparición para las tarjetas y secciones
     const revealElements = document.querySelectorAll('.service-card, .promo-section, .care-section > div > div, .faq-item, .before-after-container, .testimonial-card, .contact-info, .contact-form-wrapper, .profile-block, .treatment-detail-block, .page-hero');
     
     revealElements.forEach((el) => {
@@ -115,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Animación de entrada para el Hero (Título e Imagen)
     gsap.from('.hero-content h1', {
         opacity: 0,
         x: -50,
@@ -132,10 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: "expo.out"
     });
 
-
-    // ---------------------------------------------------------
-    // 4. ACORDEÓN DE PREGUNTAS FRECUENTES (FAQ)
-    // ---------------------------------------------------------
     const faqQuestions = document.querySelectorAll('.faq-question');
     
     faqQuestions.forEach(question => {
@@ -143,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const isOpen = question.classList.contains('active');
             const answer = question.nextElementSibling;
             
-            // Cerramos otros abiertos (opcional, para limpieza)
             if (!isOpen) {
                 document.querySelectorAll('.faq-question.active').forEach(q => {
                     q.classList.remove('active');
@@ -166,9 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---------------------------------------------------------
-    // 5. BEFORE & AFTER SLIDER INTERACTION
-    // ---------------------------------------------------------
     const baSlider = document.querySelector('.ba-slider');
     if (baSlider) {
         const afterImage = baSlider.querySelector('.ba-image-after');
@@ -194,9 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: false });
     }
 
-    // ---------------------------------------------------------
-    // 7. MAGNETIC BUTTONS (Premium Effect)
-    // ---------------------------------------------------------
     const magneticBtns = document.querySelectorAll('.btn, .social-icon-btn, .logo img');
     
     magneticBtns.forEach(btn => {
@@ -238,7 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.innerText = 'Redirigiendo a WhatsApp...';
             btn.disabled = true;
 
-            // Formatear mensaje para WhatsApp
             let text = `Hola *Esteti'Kas*, mi nombre es *${name}*.\n\n`;
             text += `Me interesa el tratamiento: *${treatment.toUpperCase()}*.\n`;
             if (message) {
@@ -265,9 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ---------------------------------------------------------
-    // 8. PARALLAX EFFECTS
-    // ---------------------------------------------------------
     gsap.to(".hero-image", {
         scrollTrigger: {
             trigger: ".hero",
@@ -291,9 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ---------------------------------------------------------
-    // 9. PAGE ENTRANCE TRANSITION
-    // ---------------------------------------------------------
     gsap.from("body", {
         opacity: 0,
         duration: 1,
